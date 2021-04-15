@@ -5,7 +5,8 @@ namespace Commander.Data
 {
     public class MockCommanderRepo : ICommanderRepo
     {
-        public IEnumerable<Command> GetAppCommands()
+        // se usa solo en la primera fase
+        public IEnumerable<Command> GetAllCommands()
         {
             var Commands = new List<Command>
             {

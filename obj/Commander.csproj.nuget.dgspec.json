@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\g\\Documents\\github\\Commander\\Commander.csproj": {}
+    "C:\\Users\\g\\Documents\\github\\dotnetCoreApi\\Commander.csproj": {}
   },
   "projects": {
-    "C:\\Users\\g\\Documents\\github\\Commander\\Commander.csproj": {
+    "C:\\Users\\g\\Documents\\github\\dotnetCoreApi\\Commander.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\g\\Documents\\github\\Commander\\Commander.csproj",
+        "projectUniqueName": "C:\\Users\\g\\Documents\\github\\dotnetCoreApi\\Commander.csproj",
         "projectName": "Commander",
-        "projectPath": "C:\\Users\\g\\Documents\\github\\Commander\\Commander.csproj",
+        "projectPath": "C:\\Users\\g\\Documents\\github\\dotnetCoreApi\\Commander.csproj",
         "packagesPath": "C:\\Users\\g\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\g\\Documents\\github\\Commander\\obj\\",
+        "outputPath": "C:\\Users\\g\\Documents\\github\\dotnetCoreApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -46,6 +46,20 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -69,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

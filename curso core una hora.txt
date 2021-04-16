@@ -1,0 +1,41 @@
+--------------
+primero
+--------------
+
+dotnet new
+dotnet new webapi -n nombreApp
+
+Los repositorios se declaran en Startup.cs     services.AddScoped<ICommanderRepo, MockCommanderRepo>();
+
+
+--------------
+segundo
+--------------
+
+sql server: instalar también el ssms    sql server management studio
+ghpinstance   clave ghpghpghpghp
+
+
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+
+dotnet tool install --global dotnet-ef
+dotnet ef
+dotnet ef migrations add InitialMigration          escafoldea SQL Server desde los modelos
+	(para cambios en la estructura de las tablas usar   dotnet ef migrations remove   y volver a hacer)
+dotnet ef database update
+
+
+--------------
+tercero
+--------------
+
+dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection --version 8.1.1
+
+
+https://www.youtube.com/watch?v=fmvcAzHpsk8
+
+2:27:00
+
+

@@ -37,5 +37,15 @@ namespace Commander.Data
         {
             return (_context.SaveChanges() >= 0);
         }
+
+        public void UpdateCommand(Command cmd)
+        {
+            // nothing
+        }
+
+        public void DeleteCommand(Command cmd)
+        {
+            _context.Commands.Remove(cmd);
+        }
     }
 }

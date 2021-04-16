@@ -39,3 +39,10 @@ https://www.youtube.com/watch?v=fmvcAzHpsk8
 2:27:00
 
 
+--------------
+cuarto
+--------------
+
+dotnet add package Microsoft.AspNetCore.JsonPatch
+dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson
+

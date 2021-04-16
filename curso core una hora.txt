@@ -5,7 +5,7 @@ primero
 dotnet new
 dotnet new webapi -n nombreApp
 
-Los repositorios se declaran en Startup.cs     services.AddScoped<ICommanderRepo, MockCommanderRepo>();
+Los repositorios se declaran en Startup.cs y se evita el new Repo     services.AddScoped<ICommanderRepo, MockCommanderRepo>();
 
 
 --------------

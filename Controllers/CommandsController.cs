@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Commander.Controllers
 {
     [Route("api/commands")]
-    [Route("/")]
+    //[Route("/")]
     [ApiController]
     public class CommandsController : ControllerBase
     {
@@ -30,7 +30,7 @@ namespace Commander.Controllers
             return Ok(_mapper.Map<IEnumerable<CommandReadDTO>>(commandItems));
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}", Name="GetCommandById")]
         public ActionResult<CommandReadDTO> GetCommandById(int id)
         {
             var commandItem = _repository.GetCommandById(id);
@@ -45,7 +45,9 @@ namespace Commander.Controllers
             var commandModel = _mapper.Map<Command>(commandCreateDTO);
             _repository.CreateCommand(commandModel);
             _repository.SaveChanges();
-            return Ok(commandModel);
+            var commandReadDTO = _mapper.Map<CommandReadDTO>(commandModel);
+            // return Ok(commandReadDTO);
+            return CreatedAtRoute(nameof(GetCommandById), new {Id = commandReadDTO.Id}, commandReadDTO);
         }
 
     }
